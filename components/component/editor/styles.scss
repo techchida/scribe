@@ -3,6 +3,17 @@
       margin-top: 0.75em;
     }
 
+    button {
+      padding: 3px 7px;
+      border-radius: 5px;
+      margin: 2px;
+      font-size: 16px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+  }
+
     blockquote {
         border-left: 3px solid rgba(#0d0d0d, 0.1);
         padding-left: 1rem;
@@ -13,7 +24,9 @@
     margin-right: 8px;
   }
 
-
+  p {
+    font-size: 1.5rem;
+  }
 
   p, h1, h2, h3 {
     // line-height: 1.2rem;
@@ -36,6 +49,14 @@
   ul,
   ol {
     padding: 0 1rem;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul{
+    list-style: disc;
   }
 
   img {

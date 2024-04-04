@@ -1,0 +1,12 @@
+.rti--tag span, .rti--tag button{
+    font-size: .8rem !important;
+}
+
+.rti--input {
+    font-size: .8rem !important;
+}
+
+.rti--container{
+    /* padding: 22px 0 !important; */
+    border: none !important;
+}

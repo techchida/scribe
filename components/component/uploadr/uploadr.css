@@ -1,0 +1,26 @@
+.filepond--root{
+    min-height: 50px;
+    background: transparent;
+    /* padding: 0 100%; */
+}
+
+.filepond--drop-label{
+    background: transparent;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+.filepond--credits{
+    display: none;
+}
+
+.filepond--panel-root{
+    background-color: #edf2f7  !important;
+    height: unset;
+}
+
+
+.rti--container:focus-within {
+    border-color: none;
+    border:none;
+    box-shadow: none !important;
+}

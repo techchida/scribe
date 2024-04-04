@@ -58,8 +58,6 @@ import {
 } from "hugeicons-react";
 
 import { useCallback } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 
 export default function EditorComponent() {
   const editor = useEditor({
@@ -173,7 +171,7 @@ export default function EditorComponent() {
                         editor.isActive("paragraph") ? "is-active" : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <ParagraphIcon /> <small>Paragraph</small>
                       </span>
                     </span>
@@ -189,7 +187,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <Heading01Icon /> <small>Heading 1</small>
                       </span>
                     </span>
@@ -205,7 +203,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <Heading02Icon /> <small>Heading 2</small>
                       </span>
                     </span>
@@ -221,7 +219,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <Heading03Icon /> <small>Heading 3</small>
                       </span>
                     </span>
@@ -236,7 +234,7 @@ export default function EditorComponent() {
                         editor.isActive("bulletList") ? "is-active" : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <LeftToRightListBulletIcon /> <small>Bullet List</small>
                       </span>
                     </span>
@@ -250,7 +248,7 @@ export default function EditorComponent() {
                         editor.isActive("orderedList") ? "is-active" : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <LeftToRightListNumberIcon />{" "}
                         <small>Ordered List</small>
                       </span>
@@ -259,7 +257,7 @@ export default function EditorComponent() {
                 </div>
               </PopoverContent>
             </Popover>
-            <div class="border-r border-gray-200 h-4 w-1"></div>
+            <div className="border-r border-gray-200 h-4 w-1"></div>
             <button
               onClick={() => editor.chain().focus().toggleBold().run()}
               className={editor.isActive("bold") ? "is-active" : ""}
@@ -368,7 +366,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <TextAlignLeftIcon />
                       </span>
                     </span>
@@ -384,7 +382,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <TextAlignCenterIcon />
                       </span>
                     </span>
@@ -400,7 +398,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <TextAlignRightIcon />
                       </span>
                     </span>
@@ -469,7 +467,7 @@ export default function EditorComponent() {
                         editor.isActive("paragraph") ? "is-active" : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <ParagraphIcon /> <small>Paragraph</small>
                       </span>
                     </span>
@@ -485,7 +483,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <Heading01Icon /> <small>Heading 1</small>
                       </span>
                     </span>
@@ -501,7 +499,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <Heading02Icon /> <small>Heading 2</small>
                       </span>
                     </span>
@@ -517,7 +515,7 @@ export default function EditorComponent() {
                           : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <Heading03Icon /> <small>Heading 3</small>
                       </span>
                     </span>
@@ -532,7 +530,7 @@ export default function EditorComponent() {
                         editor.isActive("bulletList") ? "is-active" : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <LeftToRightListBulletIcon /> <small>Bullet List</small>
                       </span>
                     </span>
@@ -546,7 +544,7 @@ export default function EditorComponent() {
                         editor.isActive("orderedList") ? "is-active" : ""
                       }
                     >
-                      <span class="typgraph">
+                      <span className="typgraph">
                         <LeftToRightListNumberIcon />{" "}
                         <small>Ordered List</small>
                       </span>
@@ -555,7 +553,7 @@ export default function EditorComponent() {
                 </div>
               </PopoverContent>
             </Popover>
-            <div class="border-r border-gray-200 h-4 w-1"></div>
+            <div className="border-r border-gray-200 h-4 w-1"></div>
 
             <button
               onClick={() => editor.chain().focus().toggleBlockquote().run()}
