@@ -12,14 +12,17 @@ import 'filepond/dist/filepond.min.css'
 import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation'
 import FilePondPluginImagePreview from 'filepond-plugin-image-preview'
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css'
-import { useState } from 'react'
+import { useState, useEffect } from "react";
 
 // Register the plugins
-registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview)
+registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 // Our app
-export default function Uploadr() {
-  const [files, setFiles] = useState([])
+export default function Uploadr({ fn }) {
+  const [files, setFiles] = useState([]);
+  useEffect(() => {
+    console.log(files[0]);
+  }, [files]);
   return (
     <div className="App w-full h-full">
       <FilePond
@@ -32,5 +35,5 @@ export default function Uploadr() {
         labelIdle='Drag & Drop your files or <span class="filepond--label-action">Browse</span>'
       />
     </div>
-  )
+  );
 }

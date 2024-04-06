@@ -6,8 +6,6 @@ import {
 } from "@/components/ui/drawer";
 
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { Input } from "@/components/ui/input";
 import { EB_Garamond } from "next/font/google";
 import EditorComponent from "@/components/component/editor/editor";
 import Logo from "@/components/component/logo";
@@ -43,53 +41,56 @@ export default function Home() {
                 </DrawerTrigger>
                 <DrawerContent>
                   <div className="container lg:w-2/3">
-                    <ScrollArea >
-                    <div className="lg:grid  grid-cols-2 justify-center gap-10 py-28">
-                      <div className="col-span-1 mb-10">
-                        <div>
-                          <h3 className="font-semibold mb-1">Preview</h3>
-                          <p className="text-xs text-slate-500 mb-6">
-                          Add or change tags (up to 5) so readers know what your story is about
-                          </p>
-                          <Uploadr />
-                        </div>
+                    <ScrollArea>
+                      <div className="lg:grid  grid-cols-2 justify-center gap-10 py-28">
+                        <div className="col-span-1 mb-10">
+                          <div>
+                            <h3 className="font-semibold mb-1">Preview</h3>
+                            <p className="text-xs text-slate-500 mb-6">
+                              Add or change tags (up to 5) so readers know what
+                              your story is about
+                            </p>
+                            <Uploadr />
+                          </div>
 
-                        <div className="col-span-1">
-                          <Textarea
-                            className="pt-6 border-0 border-b resize-none rounded-none  focus-visible:ring-white "
-                            placeholder="write a preview subtitle . . . "
-                          />
-                          <small className="text-xs text-slate-500">
-                            A summary helps your reader get a summary of what
-                            you are trying to convey.
-                          </small>
-                        </div>
-                      </div>
-
-                      <div>
-                        <div className="mb-6">
-                          <h3 className="font-semibold mb-1">Tags</h3>
-                          <p className="text-xs text-slate-500 mb-6">
-                          Add or change tags (up to 5) so readers know what your story is about
-                          </p>
-                          <Tags count={5} />
-                        </div>
-
-                        <div>
-                          <div className="flex items-center space-x-2">
-                            <Switch id="airplane-mode" />
-                            <Label htmlFor="airplane-mode">
-                              Enable Comments
-                            </Label>
+                          <div className="col-span-1">
+                            <Textarea
+                              className="pt-6 border-0 border-b resize-none rounded-none  focus-visible:ring-white "
+                              placeholder="write a preview subtitle . . . "
+                              maxlength="120"
+                            />
+                            <small className="text-xs text-slate-500">
+                              A summary helps your reader get a summary of what
+                              you are trying to convey.
+                            </small>
                           </div>
                         </div>
 
-                        <div className="flex gap-6 mt-10">
-                          <Button >Publish now</Button>
-                          <Button variant={'link'} >Schedule for later</Button>
+                        <div>
+                          <div className="mb-6">
+                            <h3 className="font-semibold mb-1">Tags</h3>
+                            <p className="text-xs text-slate-500 mb-6">
+                              Add or change tags (up to 5) so readers know what
+                              your story is about
+                            </p>
+                            <Tags count={5} />
                           </div>
+
+                          <div>
+                            <div className="flex items-center space-x-2">
+                              <Switch id="airplane-mode" />
+                              <Label htmlFor="airplane-mode">
+                                Enable Comments
+                              </Label>
+                            </div>
+                          </div>
+
+                          <div className="flex gap-6 mt-10">
+                            <Button>Publish now</Button>
+                            <Button variant={"link"}>Schedule for later</Button>
+                          </div>
+                        </div>
                       </div>
-                    </div>
                     </ScrollArea>
                   </div>
                 </DrawerContent>
