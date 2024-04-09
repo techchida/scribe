@@ -1,3 +1,4 @@
+"use client";
 import {
   DropdownMenuTrigger,
   DropdownMenuLabel,
@@ -13,9 +14,11 @@ import { SheetTrigger, SheetContent, Sheet } from "@/components/ui/sheet";
 import { Input } from "@/components/ui/input";
 import Logo from "./logo";
 
-export default function Nav({hidden}) {
+export default function Nav() {
   return (
-    <nav className={`border-b bg-background px-4 sticky top-0 md:px-6 z-10 ${hidden ? 'hidden' : ''}`}>
+    <nav
+      className={`border-b bg-background px-4 sticky nav top-0 md:px-6 z-10 `}
+    >
       <div className="container">
         <header className=" flex h-16 items-center gap-4 ">
           <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
@@ -23,7 +26,7 @@ export default function Nav({hidden}) {
               className="flex items-center gap-2 text-lg font-semibold md:text-base"
               href="#"
             >
-              <Logo />
+              <Logo className="h-4" />
               <span className="sr-only">Scribe</span>
             </Link>
             <Link
